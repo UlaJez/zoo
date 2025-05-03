@@ -19,3 +19,22 @@ Zoologijos sodo duomenys bus issaugoti faile "zoo_data.txt", o vėliau iš šio 
 + Inheritance
 + Encapsulation
 
+# Polimorfizmas
+Polimorfizmas reiškia, kad skirtingos klasės gali naudoti tą patį metodą, bet kiekviena jį įgyvendina savo būdu.
+
+Mano kode polimorfizmą galime pastebėti šiose vietose:
+```python
+class Lion(Animal):
+    def make_sound(self):
+        return "ROAR!"
+
+class Penguin(Animal):
+    def make_sound(self):
+        return "Honk honk!"
+
+class Monkey(Animal):
+    def make_sound(self):
+        return "Ooh ooh ah ah!"
+```
+Kreipiantis į metodą make_sound, gražinami skirtingi gyvunų garsai.
+
