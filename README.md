@@ -11,7 +11,7 @@ Mano sukurta programa yra skirta virtualaus zoologijos sodo valdymui, naudojant 
 
 4. Išeiti.
 
-Zoologijos sodo duomenys bus issaugoti faile "zoo_data.txt", o vėliau iš šio failo bus skaitomi duomenys ir bus galima tęsti zoologijos sodo papildymą.
+Zoologijos sodo duomenys bus išsaugoti faile "zoo_data.txt", o vėliau iš šio failo bus skaitomi duomenys ir bus galima tęsti zoologijos sodo papildymą.
 
 ### Reikalavimai:
 + Polymorphism
