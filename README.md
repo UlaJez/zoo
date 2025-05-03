@@ -39,6 +39,8 @@ class Monkey(Animal):
 Kreipiantis į metodą make_sound, grąžinami skirtingi gyvunų garsai.
 
 # Abstrakcija
+Abstrakcija - tai pagrindinė programavimo sąvoka leidžianti supaprastinti sudėtingus procesus ir sutelkti dėmesį į esmines detales.
+Ji taikoma tam, kad vieną kartą apibrėžus metodą kaip tuščią (naudojant pass), jį būtų galima vėliau išsikviesti ir panaudoti konkrečiose klasėse, neperrašinėjant bendros struktūros.
 
 Mano kode abstrakciją galime pastebėti šioje vietoje:
 ```python
@@ -109,7 +111,7 @@ class Animal(ABC):
 Savo kode naudojau Singleton design pattern'ą. Jis užtikrina, kad (šiuo atveju) sukurtas zoologijos sodas yra tik vienas.
 
 Mano projekte Singleton naudojamas Zoo klasėje:
-```pyton
+```python
 class Zoo:
     _instance = None
     
