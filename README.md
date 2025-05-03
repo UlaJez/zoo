@@ -1,6 +1,6 @@
 # Zoo management
 
-# Mano sukurta programa yra skirta virtualaus zoologijos sodo valdymui, naudojant objektinio programavimo principus.
+Mano sukurta programa yra skirta virtualaus zoologijos sodo valdymui, naudojant objektinio programavimo principus.
 
 # Kaip naudotis programa
 1. Paleisti programą.
@@ -201,4 +201,13 @@ def load_from_file(self, filename="zoo_data.txt"):
             if keeper and animal:
                 keeper.assign_animal(animal)
 ```
+# Rezultatai:
++ Programa sėkmingai kuria zoologijos sodo sistemą su gyvūnais bei jų prižiūrėtojais.
++ Sistema išsaugo zoo duomenis aiškiu, eilutėmis paremtu formatu (pvz., ZOO:, ANIMAL:), kas palengvina duomenų analizę ir objektų atkūrimą paleidimo metu.
++ Kol kas sistema nenumato blogai suformuotų duomenų apdorojimo, todėl gali kilti klaidų, jei duomenys neatitinka numatyto formato.
++ Vienas iš išūkių buvo tinkamai naudoti skaitymą bei rašymą į failus, kadangi to dar nebuvo tekę daryti.
 
+# Išvados
++ Sukurta funkcionali zoo valdymo sistema, kuri leidžia kaupti gyvūnų ir prižiūrėtojų duomenis, valdyti gyvūnų prižiūrėjimą, skaityti bei rašyti į failą.
++ Veikia Singleton šablonas, įgyvendinta agregacija (laisvi ryšiai tarp objektų), galima papildyti sistemą naujais gyvūnų tipais.
++ Ateityje galima pridėti daugiau funkcionalumų (pvz.: pridėti enclosures, veterinarus), taip pat pasinaudojus Observer design pattern'ą būtų galima padaryti automatinius pranešimus apie gyvūnų savijautą ir t.t.
