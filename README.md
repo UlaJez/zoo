@@ -66,7 +66,7 @@ class Lion(Animal):
 Metodai make_sound ir feed yra privalomi.
 
 # Paveldėjimas
-Paveldėjimas leidžia kurti naujas klases, kurios perima savybes ir metodus iš esamų klasių.
+Paveldėjimas leidžia kurti naujas klases (dukterines), kurios gali perimti esamas savybes ir metodus iš esamų klasių (tėvinės).
 
 Mano projekte yra paveldima klasė Animal ir ją paveldi kiti gyvūnai (Lion, Penguin ir Monkey):
 ```python
@@ -90,7 +90,7 @@ class Monkey(Animal):
 ```
 
 # Inkapsuliacija
-Inkapsuliacija – objektinio programavimo principas, pagal kurį objekto vidiniai duomenys yra slepiami ir jais galima manipuliuoti tik naudojant objekto viešus metodus.
+Inkapsuliacija – objektinio programavimo principas, kuris leidžia reguliuoti prieigą prie duomenų informacijos. Paslėptą arba apsaugotą informaciją gali pasiekti tik pats objektas, o išoriniai objetai turi naudotis getteriais/setteriais (@property).
 
 Mano projekte yra naudojami protected atributai:
 ```python
